@@ -16,6 +16,7 @@ Ripple_csv = open('Data.csv', 'w')
 csvwriter = csv.writer(Ripple_csv)
 count = 0
 
+# Read dictionary type of data, and transform it to csv
 for Transaction in Ripple_data:
       if count == 0:
             header = Transaction.keys()
