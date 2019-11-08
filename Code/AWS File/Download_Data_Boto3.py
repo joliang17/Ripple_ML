@@ -17,8 +17,8 @@ stop_byte=1000000
 
 client = boto3.client(
     's3',
-    aws_access_key_id='AKIAYPDHIEPY4PWX72LR',
-    aws_secret_access_key='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',
+    aws_access_key_id=,
+    aws_secret_access_key=,
     region_name='us-west-2'
 )
 Objects = client.get_object(Bucket='rippled-fullhistory', Key='08232019/transaction.db', Range='bytes={}-{}'.format(start_byte, stop_byte))
