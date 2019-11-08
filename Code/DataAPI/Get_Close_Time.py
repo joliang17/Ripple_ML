@@ -37,7 +37,7 @@ End_Time = datetime.utcnow()
 
 # Start time
 Start_Time = datetime.utcnow() + timedelta(hours=-1)
-Start_Time_Str = Start_Time.strftime('%Y-%m-%dT%H:%m:%SZ')
+Start_Time_Str = Start_Time.strftime('%Y-%m-%dT%H:%M:%SZ')
 
 Ledger_Data, Last_Ledger_Index, Last_Ledger_Time = CallAPI('https://data.ripple.com/v2/ledgers/' + Start_Time_Str)
 
